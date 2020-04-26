@@ -6,7 +6,7 @@
                     <span class="logo-text">Heilungsweg</span>
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                <a role="button" class="navbar-burger burger" onClick="toggleNav()" aria-label="menu" aria-expanded="false"
                     data-target="navBar">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -14,7 +14,7 @@
                 </a>
             </div>
 
-            <div id="navBar" class="navbar-menu" :class="{'is-active': navIsActive}">
+            <div id="navBar" class="navbar-menu">
                 {% block header_navigation %}
                     {% include 'partials/navigation.html.twig' %}
                 {% endblock %}

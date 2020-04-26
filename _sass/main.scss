@@ -72,13 +72,20 @@ $navbar-height: 6rem;
 }
 
 .home .hero {
-    // margin-bottom: -100px;
-    background: url("/user/themes/heilungsweg/images/dmytro-tolokonov_2.jpg") no-repeat !important;
-    backdrop-filter: blur(0.8);
+    background: linear-gradient(141deg, #c9ded5 0%, #8fc2c6 71%, #9ec8bc 100%) !important;
+
+    @include desktop {
+        background: url("/user/themes/heilungsweg/images/dmytro-tolokonov_2.jpg") no-repeat top center !important;
+    }    
 }
+
 
 .hero-body {
     padding-bottom:4rem !important;
+
+    @include touch {
+        padding-top: none !important;
+    }
 }
 
 .make-appointment {
@@ -120,6 +127,11 @@ section.introduction {
         .content {
             font-size: 1.1em;
         }
+
+        @include touch {
+            margin-top: 20px;
+        }
+    
     }
 }
 
