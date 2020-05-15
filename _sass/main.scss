@@ -49,7 +49,7 @@ $navbar-height: 6rem;
 
 .hero.is-primary  {
     color: $hero-color !important;
-    padding-top: 5rem;
+    padding-top: 2rem;
 
     .title, .subtitle {
         color: $hero-color !important;
@@ -137,4 +137,13 @@ section.introduction {
 
 .post {
     padding: 1.25rem;
+}
+
+h3.post-title {
+    margin-bottom: 5px;
+}
+
+.post-date {
+    display: block;
+    margin-bottom: 10px;
 }

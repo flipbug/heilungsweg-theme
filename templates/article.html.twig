@@ -41,8 +41,8 @@
                 </div>
             {% endif %}
 
-            <small class="is-italic is-size-7 has-text-grey">
-                Veröffentlicht {{ page.header.publish_date|nicetime() }}
+            <small class="is-italic is-size-10 has-text-grey">
+                Veröffentlicht am {{ page.header.publish_date|date("d.m.Y") }}
             </small>
 
         </div>

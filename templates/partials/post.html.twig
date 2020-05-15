@@ -12,13 +12,16 @@
 
             <div class="media-content">
                 <div class="content">
-                    <h3>{{ post.title }}</h3>                    
+                    <h3 class="post-title">{{ post.title }}</h3>    
+                    <small class="post-date is-italic is-size-10 has-text-grey">
+                        Veröffentlicht am {{ post.header.publish_date|date("d.m.Y") }}
+                    </small>
+
                     {% if post.header.intro %}
                         {{ post.header.intro|markdown }}
                     {% else %}
                         {{ post.summary(120) }}
                     {% endif %}
-                    <small>{{ post.header.publish_date|nicetime() }}</small>
                 </div>
             </div>
         </article>
