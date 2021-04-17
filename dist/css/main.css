@@ -6967,6 +6967,9 @@ label.panel-block {
 .navbar-item {
   font-size: 1.2em; }
 
+.has-dropdown .has-dropdown .navbar-link {
+  padding-left: 0; }
+
 .logo {
   margin-right: 10px; }
 
