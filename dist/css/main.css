@@ -7028,3 +7028,7 @@ h3.post-title {
 .post-date {
   display: block;
   margin-bottom: 10px; }
+
+.media .content figure {
+  margin-left: 0;
+  margin-right: 0; }
