@@ -7035,3 +7035,8 @@ h3.post-title {
 .media .content figure {
   margin-left: 0;
   margin-right: 0; }
+
+.footer-nav {
+    display: flex;
+    gap: 15px
+}
